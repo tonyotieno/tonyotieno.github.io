@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Energy Flexibility in GB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style> 
+						/* PDF container hidden by default with sliding effect */
+			.pdf-container {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.45s ease;
+			}
+
+			/* when open allow the iframe to show; set a bit higher than iframe height */
+			.pdf-container.open {
+			max-height: 1000px; /* slightly larger than iframe height (800) */
+			}
+
+			/* ensure button stays normal size and doesn't stretch */
+			#pdfToggle {
+			display: inline-block;
+			vertical-align: middle;
+			}
+
+		</style>
+	
+
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3><a href="#">Project Overview</a></h3>
+									</header>
+									<p>
+										This study analyzes data from the Energy Demand Research Project (EDRP) carried out in Great Britain between 2007 and 2010 with the aim to determine what natural clusters of energy consumer profiles (energy flexibility) exist when Time-of-Use (ToU) tariffs are employed across different timescales
+										e.g., high season vs low season, weekend vs weekday and to further establish whether energy demand profiles are driven by ToU tariffs or consumer sociodemographic characteristics.
+									</p>
+									
+								</section>
+								<hr />
+								<section>
+									<header>
+										<h3>Key Findings</h3>
+									</header>
+									
+									<div class="row gtr-50">
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/GB_flex/ToU.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Consumers are predominantly indifferent to Time-of-Use (ToU) tariffs</h4>
+											<p>
+												No statistically significant relationship evidenced between ToU tariffs and energy flexibility profiles.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/GB_flex/sociodem.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Load profiles linked to sociodemographic factors</h4>
+											<p>
+												Models able to predict energy flexibility profiles with modest accuracy using sociodemographic factors such as household size, employment status and dwelling type.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/GB_flex/smart_meter.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Research gaps identified</h4>
+											<p>
+												Need for flexibility studies in the context of modern smart appliances and smart meters, while controlling for other interventions and geographical factors.
+											</p>
+										</div>
+							
+									
+									</div>
+										<footer>
+											<div class="button-group">
+												<a href="https://eclectic-gaufre-1f31b6.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">View full R markdown file</a>
+												<a href="https://github.com/tonyotieno/Drivers-of-energy-flexibility-in-GB/tree/main" class="button" target="_blank" rel="noopener noreferrer">View GIT source code</a>
+											</div>
+										</footer>
+								</section>
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2><a href="#">Determining drivers of energy flexibility in GB</a></h2>
+										<p>
+											Exploring time-of-use tariffs and sociodemographic factors as drivers of energy flexibility in GB
+										</p>
+									</header>
+
+									<figure class="image featured">
+										<a href="#">
+											<img src="images/GB_flex/load_profiles.png" alt="Daily Load profile clusters of consumers in the EDRP project" />
+										</a>
+										<figcaption>Daily Load profile clusters of consumers in the EDRP project, derived by k-means clustering</figcaption>
+										</figure>
+									<p>
+										One of the many demand-side strategies utilities employ to shift demand on the grid in response to peak demand is time-of-use (ToU) tariffs. 
+										These tariffs incentivize consumers to use energy at cheaper prices during off-peak periods. 
+										Different variants of ToU tariffs exist, with some having price variations between weekdays and weekends, or high seasons and low seasons.
+										Consumers may respond to ToU tariffs by shifting their demand in an attempt to make savings or may be rigid in their energy use, with their energy flexibility continuing to be driven by their sociodemographic characteristics 
+										e.g., employment status or household size.
+									</p>
+									<section>
+										<header>
+											<h3>Methodology Overview</h3>
+										</header>
+										<p>
+											This project investigated the drivers of domestic energy flexibility in Great Britain using a two-stage machine learning approach on data from the Energy Demand Research Project (EDRP) (2007–2010). 
+											The first stage focused on clustering household daily load profiles. Energy consumption data, normalized to compare the shape (when energy is used) rather than the magnitude of consumption , was analyzed using the K-means algorithm. 
+											The elbow method and silhouette score determined the optimal number of clusters to be three. 
+										</p>
+										<p>		
+											In the second stage, multinomial logistic regression was performed using the derived three clusters as the target variable. 
+											The independent predictor variables included a Time-of-Use (ToU) tariff indicator and ACORN sociodemographic characteristics , a geodemographic segmentation of the UK population. 
+											The analysis found no statistically significant relationship between ToU tariff exposure and cluster membership. However, sociodemographic factors, particularly the 'Hard-Pressed' ACORN category, showed the strongest statistical significance in predicting load profile cluster membership. 
+											This suggests that consumer energy flexibility is primarily driven by sociodemographic characteristics rather than ToU tariff incentives.
+										</p>
+										<figure class="image featured">
+										<a href="#">
+											<img src="images/GB_flex/ToU_distribution.png" alt="Methodology" />
+										</a>
+										<figcaption>Percentage of Time-of-Use consumers in each cluster</figcaption>
+										</figure>
+										<p>There was a roughly even distribution of Time-of-Use consumers across the clusters, as opposed to concentration of Time-of-Use consumers in specific clusters, evidencing a lack of strong behavioral segmentation based on tariff exposure.</p>
+									</section>
+								<p>	The <strong>full paper</strong> listed below contains detailed information about the methodology, results, and implications of the study.</p>
+								</article>
+								<!-- inside #content, near the bottom of the article -->
+								<div class="row">
+									<div class="col-12">
+										<a href="javascript:void(0)" id="pdfToggle" class="button" style="display:inline-block; margin-right:1em;">
+										📄 Show Full Paper
+										</a>
+										<a href="index.html" class="button" style="display:inline-block;">
+										 Back to Projects
+										</a>
+										<div id="pdfContainer" class="pdf-container" aria-hidden="true">
+										<iframe src="documents/GB_Flex/Energy_flexibility.pdf" width="100%" height="800" style="border:none; border-radius:8px;"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+
+					</div>
+					<hr />
+				</div>
+				
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						
+						<div class="row">
+							<div class="col-12">
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Want to get in touch?</h3>
+										</header>
+										<p>Feel free to reach out on email and connect on LinkedIn.</p>
+										<ul class="icons">
+
+											<li><a href="mailto:youremail@example.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+											<li><a href="https://www.linkedin.com/in/tony-otieno/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.getElementById('pdfToggle').addEventListener('click', function () {
+				const pdfDiv = document.getElementById('pdfContainer');
+				const isOpen = pdfDiv.classList.toggle('open');
+				this.textContent = isOpen ? '📄 Hide Full Paper' : '📄 Show Full Paper';
+				// update aria-hidden for accessibility
+				pdfDiv.setAttribute('aria-hidden', !isOpen);
+				});
+			</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SDG 7 interlinkages on a local level</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style> 
+						/* PDF container hidden by default with sliding effect */
+			.pdf-container {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.45s ease;
+			}
+
+			/* when open allow the iframe to show; set a bit higher than iframe height */
+			.pdf-container.open {
+			max-height: 1000px; /* slightly larger than iframe height (800) */
+			}
+
+			/* ensure button stays normal size and doesn't stretch */
+			#pdfToggle {
+			display: inline-block;
+			vertical-align: middle;
+			}
+
+		</style>
+	
+
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3><a href="#">Project Overview</a></h3>
+									</header>
+									<p>
+										This study examines how interlinkages between Sustainable Development Goal 7 (Affordable
+										and Clean Energy) and other SDGs manifest at the city level. Using over 10,000 indicators from 120
+										Voluntary Local Reviews, a novel methodology was developed combining semantic embeddings,
+										probabilistic clustering, large language models, progress scoring, and causal discovery. Sentence
+										embeddings were grouped with Gaussian Mixture Models, labelled using Gemini 2.5 Flash, and
+										tracked over time with normalised progress scores. Causal dependencies were inferred with the
+										PC algorithm across rolling windows, with link strengths evaluated using BIC scores and stability
+										tested via bootstrap resampling.
+									</p>
+									
+								</section>
+								<hr />
+								<section>
+									<header>
+										<h3>Key Findings</h3>
+									</header>
+									
+									<div class="row gtr-50">
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/thesis/ghent.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Ghent, Stuttgart, and Barcelona lead in monitoring and reporting</h4>
+											<p>
+												These emerged as the top 3 cities reporting the highest number of SDG 7 indicators.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/thesis/indicator_distro.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Cities are prioritizing energy efficiency, while Sustainable mobility remains under-reported</h4>
+											<p>
+												Energy efficiency was the most reported theme under SDG 7, while sustainable mobility had the fewest indicators reported.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/thesis/renewables.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Renewables adoption and sustainable mobility evidenced consistent progress</h4>
+											<p>
+												Renewable energy share and solar power generation maintained steady gains,while sustainable urban mobility showed the
+												most consistent upward trend,becoming the strongest performer in 2016.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/thesis/building_efficiency.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Cities regressed in building efficiency and thermal comfort</h4>
+											<p>
+												Renewable heat and district energy declined
+												sharply from 2012 onward, with only marginal recovery. Building energy efficiency and thermal comfort also trended
+												downward after 2016, reaching negative territory by 2020.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/thesis/sdg_interlinks.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>SDG 7 emerged as both a driver and recipient of progress</h4>
+											<p>
+												Outward links highlight how energy access and decarbonisation support health, infrastructure, and climate, while inward links show
+												how education, economic development, and sustainable consumption enable energy transitions.
+												Second-order pathways reveal cascading nexus effects across urban systems.
+											</p>
+										</div>
+									
+									</div>
+									<footer>
+										<a href="https://illustrious-cupcake-62a3e7.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">View full Python Notebook</a>
+									</footer>
+								</section>
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2><a href="#">SDG 7 interlinkages on a local (city) level</a></h2>
+										<p>
+											Exploring thematic reporting with Large Language Models and Causal Discovery with Bayesian Networks
+										</p>
+									</header>
+
+									<figure class="image featured">
+										<a href="#">
+											<img src="images/thesis/FINAL_OUTWARD_CAUSAL_MAP.png" alt="Causal map of energy indicators" />
+										</a>
+										<figcaption>Causal map depicting energy related clusters of indicators as drivers of progress in other paradigms of Sustainable Development.</figcaption>
+										</figure>
+									<p>
+										The Sustainable Development Goals (SDGs) adopted by the UN General Assembly in 2015
+										represented a coherent way to address the 2030 agenda by entwining diverse paradigms of
+										economic, social, and environmental targets in the 17 SDGs as an ‘indivisible whole’. 
+										The seventh sustainable development goal to ‘Ensure access to affordable, reliable,
+										sustainable, and modern energy for all’ emerged as a key anchor for
+										sustainable development in health and education, spurring industrial and economic growth, while
+										having potential trade-offs with environmental sustainability, highlighting the importance of
+										renewables uptake and improvements in energy efficiency.
+										Despite the recognition of the integrated nature of sustainable development, most evidence of
+										interlinkages is at global and national scales, with an evidence gap at the local/city scale where the
+										implementation happens. Furthermore, there is a descriptive bias in the literature,
+										with most studies incorporating associations, including statistical ones such as correlations, 
+										and expert judgements while causal evidence of the interlinkages, however, remains
+										scarce, especially for cities, presenting a challenge for urban policymakers who need directional
+										insights and not just correlational ones, to prioritise interventions and avoid unintended trade-offs. 
+										These challenges are further exacerbated by local-level monitoring hurdles,
+										including heterogeneous indicator sets across cities and sparse time series data, which complicates
+										classic econometric approaches.
+									</p>
+
+									<p>	While there are studies that have attempted to thematically cluster locally reported indicators across
+										different cities, few studies have furthered the analysis by integrating the
+										semantic understanding of local-level indicators with quantitative causal discovery to determine
+										levers for progress and potential hurdles between different progress indicators, including energy-
+										related measures of sustainable development. As such, this study aims to posit an integrative,
+										data-driven pipeline to uncover plausible causal pathways among local SDG themes using city-
+										reported indicators, with a focus on SDG7. More formally, the study aims to answer the following
+										research questions:
+										<ol>
+											<li>What thematic/topical clusters of indicators related to SDG7 emerge in local-level monitoring
+												and reporting?</li>
+											<li>What progress have cities made in the different thematic areas of SDG7-related indicators?</li>
+											<li>What are the causal mechanisms for SDG progress at the local level - what are the potential
+											levers and hurdles in achieving SDG7 at the local level, and what role does the achievement of this goal play in the wider sustainable development agenda?</li>
+										</ol>
+									<section>
+										<header>
+											<h3>Methodology Overview</h3>
+										</header>
+
+										<figure class="image featured">
+										<a href="#">
+											<img src="images/thesis/qual_pipeline.png" alt="Methodology" />
+										</a>
+										<figcaption><strong>Qualitative analysis pipeline:</strong> Outputs thematic labels for local-level indicators</figcaption>
+										</figure>
+
+										<p>
+											To answer the research questions, the study follows the high-level methodological pipeline outlined.
+											An urban SDG corpus of over 10,000 indicators is assembled from 120 Voluntary local reviews
+											(VLRs) published by 93 cities, aligning names, units, and directionality. The indicators are coherently
+											clustered semantically using sentence embeddings, and Large Language Models (LLMs) are used
+											to label and interpret the thematic indicator clusters (e.g., clean cooking, urban mobility). Cluster
+											progress is computed using baseline-relative, direction-aware scoring at the city-year level, and
+											the cluster-level panel progress scores are used to infer causal structure among clusters using
+											Bayesian networks (BN), with an emphasis on SDG7. The causal links discovered are validated
+											and interpreted against prior literature and urban context to identify synergies, tradeoffs, and policy
+											levers. The robustness of the results is tested through sensitivity tests, including bootstrapped
+											network edges.
+										</p>
+									
+										<figure class="image featured">
+										<a href="#">
+											<img src="images/thesis/quant_pipeline.png" alt="Methodology" />
+										</a>
+										<figcaption><strong>Quantitative analysis pipeline:</strong> Outputs Causal graphs, city-cluster progress trends and city rankings</figcaption>
+										</figure>
+									</section>
+									<section>
+										<header>
+											<h3>Results Highlights</h3>
+										</header>
+										<p>To visualize the clusters in the semantic space, the vector embeddings of the indicators were reduced to two dimensions
+									using principal component analysis (PCA), allowing for the assessment of cluster coherence and the identification of overlapping themes across
+									clusters.</p>
+										<figure class="image featured">
+										<a href="#">
+											<img src="images/thesis/space_clusters_sdg7.png" alt="Methodology" />
+										</a>
+										<figcaption><strong>SDG 7 clusters in semantic space:</strong> Coherent clusters are more compact, closely
+											related clusters overlap</figcaption>
+										</figure>
+										<p>The cluster "Energy Use, Affordability, and Efficiency" is the most coherent with closely clustered
+										indicators and few overlaps with other clusters. As expected, the clusters "Renewable Energy Generation and
+										Capacity", "Renewable Energy Consumption Share", and "Solar Power Generation and Capacity" are closely related
+										with multiple overlaps in the semantic space. Equally as expected, the clusters "Building Energy Efficiency & Thermal
+										Comfort" and "Renewable Heat Production and District Energy" have semantic overlaps.</p>
+										<p>Lastly, the clusters "Household Energy Access and Poverty", "Energy Grid Performance and Modernization", and "Sustainable Urban Mobility Progress"
+										are semantically clustered together, reflecting their thematic overlaps and overarching target of improving energy
+										access and quality.</p>
+										<figure class="image featured">
+										<a href="#">
+											<img src="images/thesis/progress_timeseries.png" alt="Methodology" />
+										</a>
+										<figcaption><strong>Timeseries progress in SDG 7 clusters:</strong> Rates of progress calculated by fitting linear
+										regression models for each indicator (subsequently aggregated to clusters) for 5-year
+										time windows centered around each year from 2010 to 2020</figcaption>
+										</figure>
+										<p>Between 2010 and 2020, progress across SDG 7 clusters followed divergent trajectories. 
+										Renewable energy consumption share and solar power generation maintained steady gains, while sustainable urban mobility showed the
+										most consistent upward trend, becoming the strongest performer in 2016. Energy use, affordability and efficiency and
+										energy grid performance also improved markedly after 2014. In contrast, renewable heat and district energy declined
+										sharply from 2012 onward, with only marginal recovery. Building energy efficiency and thermal comfort also trended
+										downward after 2016, reaching negative territory by 2020. Household energy access and renewable generation
+										capacity exhibited fluctuating but modest improvements overall.</p>
+									</section>
+
+
+								<p>	To view comprehensive details on how the indicators' vector embeddings were clustered and labelled using Large Language Models, as well as the causal discovery that underpinned the progress in the various SDG 7 clusters, please refer to the full paper below</p>
+								</article>
+								<!-- inside #content, near the bottom of the article -->
+								<div class="row">
+									<div class="col-12">
+										<a href="javascript:void(0)" id="pdfToggle" class="button" style="display:inline-block; margin-right:1em;">
+										📄 Show Full Paper
+										</a>
+										<a href="index.html" class="button" style="display:inline-block;">
+										 Back to Projects
+										</a>
+										<div id="pdfContainer" class="pdf-container" aria-hidden="true">
+										<iframe src="documents/SDG_7_interlinkages/BENV0096_NQMJ9_01-09-2025.pdf" width="100%" height="800" style="border:none; border-radius:8px;"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+
+					</div>
+					<hr />
+				</div>
+				
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						
+						<div class="row">
+							<div class="col-12">
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Want to get in touch?</h3>
+										</header>
+										<p>Feel free to reach out on email and connect on LinkedIn.</p>
+										<ul class="icons">
+
+											<li><a href="mailto:youremail@example.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+											<li><a href="https://www.linkedin.com/in/tony-otieno/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.getElementById('pdfToggle').addEventListener('click', function () {
+				const pdfDiv = document.getElementById('pdfContainer');
+				const isOpen = pdfDiv.classList.toggle('open');
+				this.textContent = isOpen ? '📄 Hide Full Paper' : '📄 Show Full Paper';
+				// update aria-hidden for accessibility
+				pdfDiv.setAttribute('aria-hidden', !isOpen);
+				});
+			</script>
+
+
+	</body>
+</html>

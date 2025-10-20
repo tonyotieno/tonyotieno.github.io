@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+		<head>
+		<title>Optimal solar siting in Indonesia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style> 
+						/* PDF container hidden by default with sliding effect */
+			.pdf-container {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.45s ease;
+			}
+
+			/* when open allow the iframe to show; set a bit higher than iframe height */
+			.pdf-container.open {
+			max-height: 1000px; /* slightly larger than iframe height (800) */
+			}
+
+			/* ensure button stays normal size and doesn't stretch */
+			#pdfToggle {
+			display: inline-block;
+			vertical-align: middle;
+			}
+
+		</style>
+	
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+		
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-8 col-12-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2><a href="#">GIS-based optimal siting of Solar PV Plants in Indonesia</a></h2>
+										<p>
+											A decarbonised electrical supply vision to 2040
+										</p>
+									</header>
+										<figure class="image featured">
+										<a href="#">
+											<img src="images/IDN_solar/SSRD_map.png" alt="Indonesia solar map" />
+										</a>
+										<figcaption>Annual generation potential per 12km<sup>2</sup> grid cell in Indonesia in 2024 </figcaption>
+										</figure>
+									<p>
+										Indonesia has set forward ambitious targets in terms of its renewable energy futures. President Prabowo Subianto famously declared plans for Indonesia to achieve net zero emissions by 2050, 10 years ahead of schedule. 
+										Traditionally steeped in coal use, this energy transition aims to phase out fossil fuels and expand renewables capacity. 
+										<a href="https://ieefa.org/resources/unlocking-indonesias-renewable-energy-investment-potential" target="_blank" rel="noopener noreferrer">Studies </a> suggest that upto 146 billion USD investments may be required for Indonesia to meet its 2030 targets.
+										The objective of this study is to perform a holistic analysis from demand projection, to site suitability analysis for solar PV plant installation and ultimately financial assessment of the projects viability. 
+										The end goal is to develop a strategy for solar development that the Indonesian government can use as a road map for its energy transition.
+									</p>
+
+									<section>
+										<header>
+											<h3>Methodology Overview</h3>
+										</header>
+										<p>The analysis is carried out in the following steps:</p>
+											<ol>
+												<li>A country snapshot is obtained to establish the capacity of existing, in construction, and planned renewable projects in Indonesia.</li>
+												<li>From the literature, a projection is made of Indonesia’s national electricity demand in 2040.</li>
+												<li>Determination of new solar capacity required: From the projected electricity demand, the capacity of new solar plants required is determined based on assumptions of capacity factors of different energy sources and national energy generation targets of the Indonesian government.</li>
+												<li>A site suitability analysis is carried out including:
+													<ul>
+														<li><strong>Identification of criteria:</strong> Identification of the various criteria that influence the suitability of a site for solar PV plant installation. These include environmental, social, technical, and economic criteria.</li>
+														<li><strong>Data collection:</strong> Gathering of spatial data for each criterion from various sources such as satellite imagery, government databases, and field surveys.</li>
+														<li><strong>Visualizing spatial distribution:</strong> Visualizing spatial distribution of the individual criteria.</li>
+														<li><strong>Multicriteria decision making:</strong> Multicriteria decision making utilizing analytic hierarchical process (AHP)</li>
+														<li><strong>Identification of solar sites:</strong> Identification the number of solar sites required to meet the installed capacity required, their optimal locations and length of transmission lines required for grid connections</li>
+
+													</ul>
+												</li>
+												<li>Finally, a financial analysis is carried out to establish the economic viability.</li>
+											</ol>
+																				
+									</section>
+									<section>
+										<p>The factors determining optimal sites can be categorized as climatic such as solar irradiance, topographic, e.g. elevation, and proximity factors e.g. distance to existing grid infrastructure.
+											The figure below shows the optimal solar sites after combining all the site suitability criteria using the MCDMA/AHP method. It is proposed to construct the three solar PV plants across the island of Java that hosts the capital Jakarta.
+										</p>
+										<figure class="image featured">
+										<a href="#">
+											<img src="images/IDN_solar/final_map.png" alt="Final map of optimal solar sites in Indonesia" />
+										</a>
+										<figcaption>Combined suitability index with proposed locations</figcaption>
+										</figure>
+									
+										<p> To view the individual maps with the various suitability criteria and the comprehensive analysis that derived these optimal sites as well as the accompanying economic feasibility analyses, see the full paper below</p>	
+										</section>
+								</article>
+								<!-- inside #content, near the bottom of the article -->
+								<div class="row">
+									<div class="col-12">
+										<a href="javascript:void(0)" id="pdfToggle" class="button" style="display:inline-block; margin-right:1em;">
+										📄 Show Full Paper
+										</a>
+										<a href="index.html" class="button" style="display:inline-block;">
+										 Back to Projects
+										</a>
+										<div id="pdfContainer" class="pdf-container" aria-hidden="true">
+										<iframe src="documents/IDN_solar/Optimal _siting_solar_plants.pdf" width="100%" height="800" style="border:none; border-radius:8px;"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3><a href="#">Project Overview</a></h3>
+									</header>
+									<p>
+										This study analyzes potential solar plant investments in Indonesia in line with its national energy transition. 
+										The objective is to perform a holistic analysis from demand projection, to site suitability analysis for solar PV plant installation and ultimately financial assessment of the projects viability. 
+										The end goal is to develop a strategy for solar development that the Indonesian government can use as a road map for its energy transition.
+									</p>
+									
+								</section>
+								<hr />
+								<section>
+									<header>
+										<h3><a href="#">Key Findings</a></h3>
+									</header>
+									
+									<div class="row gtr-50">
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/IDN_solar/no_of_sites.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Number of Solar PV plants required</h4>
+											<p>
+												85 GW of additional capacity required to meet 2040 targets, translating to 3-4 (12km<sup>2</sup>-sized) new solar PV plants.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/IDN_solar/java.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Site locations</h4>
+											<p>
+												It is proposed to construct the three solar PV plants across the island of Java that hosts the capital Jakarta. 
+												Specifically, the provinces of Jawa Barat, Jawa Tengah and Jawa Timur.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/IDN_solar/translines.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Transmission line length</h4>
+											<p>
+												The total length from proposed sites to nearest transmission lines is approximately <strong>25 km</strong>.
+											</p>
+										</div>
+										<div class="col-4">
+											<a href="#" class="image fit"><img src="images/IDN_solar/solar_costs.png" alt="" /></a>
+										</div>
+										<div class="col-8">
+											<h4>Capital expenditure</h4>
+											<p>
+												The total capital expenditure required for the proposed solar PV plants is estimated at <strong>USD 100 billion</strong>, with a positive Net present value signalling project viability and levelized cost of electricity (LCOE) of <strong>USD 0.03/kWh</strong>.
+											</p>
+										</div>
+				
+									</div>
+									<footer>
+											<div class="button-group">
+												<a href="https://leafy-creponne-225a84.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">View full R markdown file</a>
+												<a href="https://github.com/tonyotieno/Solar-PV-plants-Geospatial-siting-Indonesia/tree/main" class="button" target="_blank" rel="noopener noreferrer">View GIT source code</a>
+											</div>
+										</footer>
+								</section>
+							</div>
+						</div>
+						<hr />
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						
+						<div class="row">
+							<div class="col-12">
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Want to get in touch?</h3>
+										</header>
+										<p>Feel free to reach out on email and connect on LinkedIn.</p>
+										<ul class="icons">
+
+											<li><a href="mailto:youremail@example.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+											<li><a href="https://www.linkedin.com/in/tony-otieno/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.getElementById('pdfToggle').addEventListener('click', function () {
+				const pdfDiv = document.getElementById('pdfContainer');
+				const isOpen = pdfDiv.classList.toggle('open');
+				this.textContent = isOpen ? '📄 Hide Full Paper' : '📄 Show Full Paper';
+				// update aria-hidden for accessibility
+				pdfDiv.setAttribute('aria-hidden', !isOpen);
+				});
+			</script>
+
+	</body>
+</html>
